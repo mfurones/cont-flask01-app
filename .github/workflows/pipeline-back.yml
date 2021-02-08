@@ -1,0 +1,15 @@
+name: "back build pipeline"
+
+on: workflow_dispatch
+
+job:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: GitHub Action for Bash
+        uses: lafernando/github-action-bash@v1.0
+        args: ["echo 'Hola-Mundo'"]

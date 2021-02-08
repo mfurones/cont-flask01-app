@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+
+
+
+# credential files
+
+pipeline/vars/credentials.yml
+

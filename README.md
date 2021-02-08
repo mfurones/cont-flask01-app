@@ -1,1 +1,1 @@
-# cont-flask01-app
+# Repository that has all components for the application
