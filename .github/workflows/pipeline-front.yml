@@ -27,20 +27,19 @@ jobs:
           username: ${{ secrets.ARTIFACTORY_USER }}
           password: ${{ secrets.ARTIFACTORY_APIKEY }}
 
-      - name: GitHub Action for Bash
-        run: |
-          pwd &&
-          ls -la
+#      - name: GitHub Action for Bash
+#        run: |
+#          pwd &&
+#          ls -la
 
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
-          target: docker-mfpage
-          context: ./
-          file: ./front/dockerFile/dockerfile
+          context: .
+          file: ./dockerFile/dockerfile
           push: true
           tags: |
-            front/frontapp:latest
+            mfurones.jfrog.io/docker-mfpage/front/frontApp:latest
 
 
 
