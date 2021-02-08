@@ -32,11 +32,15 @@ jobs:
           username: ${{ secrets.ARTIFACTORY_USER }}
           password: ${{ secrets.ARTIFACTORY_APIKEY }}
 
+      - name: GitHub Action for Bash
+        uses: jcblw/bash@master
+        args: ["ls -la"]
+
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
           target: docker-mfpage
-          context: .
+          context: ./
           file: ./dockerFile/dockerfile
           push: true
           tags: |
