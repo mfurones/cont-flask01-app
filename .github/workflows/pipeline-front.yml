@@ -36,8 +36,8 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           target: docker-mfpage
-          context: ./front/
-          file: ./dockerFile/dockerfile
+          context: ./
+          file: ./front/dockerFile/dockerfile
           push: true
           tags: |
             front/frontapp:latest
