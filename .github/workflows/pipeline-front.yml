@@ -2,7 +2,7 @@ name: "front build pipeline"
 
 on: workflow_dispatch
 
-job:
+jobs:
 
   build:
 
@@ -25,7 +25,7 @@ job:
           username: ${{ secrets.ARTIFACTORY_USER }}
           password: ${{ secrets.ARTIFACTORY_APIKEY }}
 
-     -  name: Build and push
+      - name: Build and push
         uses: docker/build-push-action@v2
         with:
           target: docker-mfpage

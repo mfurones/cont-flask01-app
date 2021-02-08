@@ -2,7 +2,7 @@ name: "back build pipeline"
 
 on: workflow_dispatch
 
-job:
+jobs:
 
   build:
 
