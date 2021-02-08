@@ -2,11 +2,6 @@ name: "front build pipeline"
 
 on:
   workflow_dispatch:
-    inputs:
-          name:
-            description: 'Manual Trigger'
-            required: true
-            default: 'run'
 
 jobs:
 
@@ -33,8 +28,9 @@ jobs:
           password: ${{ secrets.ARTIFACTORY_APIKEY }}
 
       - name: GitHub Action for Bash
-        uses: lafernando/github-action-bash/@master
-        args: "[ls -la]"
+        run: |
+          pwd &&
+          ls -la
 
       - name: Build and push
         uses: docker/build-push-action@v2
