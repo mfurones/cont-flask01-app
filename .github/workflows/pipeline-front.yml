@@ -39,7 +39,7 @@ jobs:
           file: ./dockerFile/dockerfile
           push: true
           tags: |
-            mfurones.jfrog.io/docker-mfpage/front/frontApp:latest
+            mfurones.jfrog.io/docker-mfpage/front/frontapp:latest
 
 
 
