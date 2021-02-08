@@ -20,6 +20,7 @@ jobs:
         uses: Bhacaz/checkout-files@v1
         with:
           files: front
+          token: ${{ github.token }}
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
