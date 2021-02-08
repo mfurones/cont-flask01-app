@@ -40,7 +40,7 @@ jobs:
           file: ./dockerFile/dockerfile
           push: true
           tags: |
-            front/frontApp:latest
+            front/frontapp:latest
 
 
 
