@@ -1,6 +1,12 @@
 name: "front build pipeline"
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+          name:
+            description: 'Manual Trigger'
+            required: true
+            default: 'run'
 
 jobs:
 
