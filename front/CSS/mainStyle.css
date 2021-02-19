@@ -41,7 +41,7 @@ body {
     min-width: 500px;
     min-height: 570px;
     margin-bottom: 30px;
-    background-image: url(../images/wordcloud04.png);
+    background-image: url(/images/wordcloud04.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
